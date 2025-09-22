@@ -1,0 +1,140 @@
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0F2027;
+  color: #E0E0E0;
+  line-height: 1.6;
+}
+
+header {
+  background: #203A43;
+  color: #FFFFFF;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid #2C5364;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #E0E0E0;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: #203A43;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #FFFFFF;
+  border-left: 4px solid #2C5364;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+    background: #0F2027;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    color: #2C5364;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #2C5364;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+footer {
+    background: #0F2027;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 2px solid #2C5364;
+}
+
+
+
+@media (max-width: 768px) {
+  
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr; 
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
